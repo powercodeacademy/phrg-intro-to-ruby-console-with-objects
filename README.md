@@ -34,7 +34,10 @@ Implement all of the methods described below
   * returns **all** of the course instances
 * Course.find_by_subject(subject)
   * given a string of the subject, returns the **first course** whose subject matches
-
+* Course.all_subjects
+  * returns a collection of all the subjects of all courses, without duplications
+* Course#class_list
+  * returns a collection of the full names of each student enrolled in the given course
 
 ### `Enrollment`
 
@@ -44,13 +47,32 @@ Implement all of the methods described below
   * returns the course object for that given enrollment
 * Enrollment#student
   * returns the student object for that given enrollment
+* Enrollment#semester
+  * returns a string of the given semester for the enrollment, e.x. `"Fall 2024"`
 
 ### `Student`
 
 * Student.all
   * returns **all** of the student instances
+* Student#full_name
+  * returns a string of the students full name
+* Student#enroll(course, semester)
+  * given a **course object** and a semester (as a string), creates a new enrollment and associates it with that course and student. An `Enrollment` belongs to a `Student` and a `Course`. The method should return the new `Enrollment` object.
+* Student#buy_supply(kind)
+  * given a string of the kind of supply, creates a new school_supply and associates it with that student. A `SchoolSupply` belongs to a `Student`. The method should return the new `SchoolSupply` object.
 
 ### `SchoolSupply`
 
 * SchoolSupply.all
   * returns all the school_supply instances
+* SchoolSupply#student
+  * returns the student object for that given school_supply
+
+## Bonus questions:
+
+- What other objects might fit in this domain?
+
+- What may be the benefit of changing `semester` into its own class? What attributes would it have? What object would it belong to?
+
+- What other methods could be added and useful in this domain?
+
