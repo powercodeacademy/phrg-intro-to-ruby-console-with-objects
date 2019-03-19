@@ -44,9 +44,9 @@ Implement all of the methods described below
 * Enrollment.all
   * returns all enrollment instances
 * Enrollment#course
-  * returns the course object for that given enrollment
+  * returns the **course object** for that given enrollment
 * Enrollment#student
-  * returns the student object for that given enrollment
+  * returns the **student object** for that given enrollment
 * Enrollment#semester
   * returns a string of the given semester for the enrollment, e.x. `"Fall 2024"`
 
@@ -64,9 +64,9 @@ Implement all of the methods described below
 ### `SchoolSupply`
 
 * SchoolSupply.all
-  * returns all the school_supply instances
+  * returns **all** the school_supply instances
 * SchoolSupply#student
-  * returns the student object for that given school_supply
+  * returns the **student object** for that given school_supply
 
 ## Bonus questions:
 
