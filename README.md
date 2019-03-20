@@ -36,6 +36,8 @@ Implement all of the methods described below
   * given a string of the subject, returns the **first course** whose subject matches
 * Course.all_subjects
   * returns a collection of all the subjects of all courses, without duplications
+* Course#enrollments
+  * returns a collection of enrollment objects for the given course
 * Course#class_list
   * returns a collection of the full names of each student enrolled in the given course
 
@@ -60,6 +62,8 @@ Implement all of the methods described below
   * given a **course object** and a semester (as a string), creates a new enrollment and associates it with that course and student. An `Enrollment` belongs to a `Student` and a `Course`. The method should return the new `Enrollment` object.
 * Student#buy_supply(kind)
   * given a string of the kind of supply, creates a new school_supply and associates it with that student. A `SchoolSupply` belongs to a `Student`. The method should return the new `SchoolSupply` object.
+* Student#school_supplies
+  * returns a collection of all of the given student's SchoolSupplies
 
 ### `SchoolSupply`
 
@@ -67,8 +71,12 @@ Implement all of the methods described below
   * returns **all** the school_supply instances
 * SchoolSupply#student
   * returns the **student object** for that given school_supply
+* SchoolSupply.find_all_by_kind(kind)
+  * returns a collection of school_supply objects with the given kind
 
-## Bonus questions:
+## Questions:
+
+Once you've completed this project, discuss the questions below.
 
 - What other objects might fit in this domain?
 
