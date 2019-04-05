@@ -12,7 +12,7 @@ poetry = Course.new("Poetry 101")
 # raise "Course.all did not return collection of instances of Course" unless Course.all.is_a?(Array) && Course.all.first.is_a?(Course)
 
 # raise "Course.find_by_subject(subject) did not return an instance of Course" unless Course.find_by_subject("European History").is_a?(Course)
-# raise "Course.find_by_subject(subject) did not return the correct restaurant" unless Course.find_by_subject("Poetry 101") == poetry
+# raise "Course.find_by_subject(subject) did not return the correct course" unless Course.find_by_subject("Poetry 101") == poetry
 
 # amy = Student.new("Amy", "Schumer")
 # jim = Student.new("Jim", "Carrey")
